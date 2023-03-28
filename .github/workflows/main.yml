@@ -11,4 +11,4 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: greet-current-person
-        run: echo "Hello, ${( github.event.inputs.person )}"
+        run: echo "Hello, ${{ github.event.inputs.person }}"
